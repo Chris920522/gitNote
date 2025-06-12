@@ -22,7 +22,7 @@ git remote -v
 git status
 
 --上傳所有修改後的檔案
-
+git pull origin master --rebase
 git add .
 git commit -m "附加訊息或修改說明"
 git push origin 分支名稱
@@ -44,3 +44,6 @@ git reset --hard 修改ID
 
 --強制上傳到遠端倉庫(非必要避免使用，會覆蓋遠端倉庫的歷史)--
 git push origin 分支名稱 --force
+
+--下載遠端檔案--
+git clone 倉庫連結.git
